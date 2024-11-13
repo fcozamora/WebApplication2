@@ -1,0 +1,10 @@
+﻿@model WebApplication2.Models.DTO.DashboardDto
+
+@{
+    ViewBag.Title = "Service";
+}
+
+<h3>@ViewBag.Message</h3>
+
+@Html.Partial("_UserInfo", Model.UserModel)
+@Html.Partial("_ProductInfo", Model.ProductModel)
